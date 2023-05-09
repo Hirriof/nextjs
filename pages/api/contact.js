@@ -6,7 +6,7 @@
   */
 
   export default function (req, res) {
-    require('dotenv').config()
+    //require('dotenv').config()
 
     let nodemailer = require('nodemailer')
     const transporter = nodemailer.createTransport({
