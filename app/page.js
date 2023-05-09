@@ -50,7 +50,7 @@ export default function Home() {
           <input
             id="frm-first"
             type="text"
-            name="first"
+            name="name"
             autoComplete="given-name"
             required
           />
