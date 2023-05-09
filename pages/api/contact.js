@@ -8,7 +8,8 @@ async function sendEmail(req, res) {
     await sendgrid.send({
       to: "aleygues@gmail.com", // Your email where you'll receive emails
       from: "aleygues@gmail.com", // your website email address here
-      subject: `[Lead from website] : ${req.body.subject}`,
+      //subject: `[Lead from website] : ${req.body.subject}`,
+      subject: `[Lead from website] : `,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
@@ -27,10 +28,10 @@ async function sendEmail(req, res) {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>You've got a new mail from ${req.body.fullname}, their email is: ✉️${req.body.email} </h3>
+              <h3>You've got a new mail from  their email is:  </h3>
               <div style="font-size: 16px;">
               <p>Message:</p>
-              <p>${req.body.message}</p>
+              <p></p>
               <br>
               </div>
               <img src="https://manuarora.in/logo.png" class="logo-image" style="height: 50px;width: 50px;border-radius: 5px;overflow: hidden;">
