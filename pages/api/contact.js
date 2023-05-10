@@ -1,5 +1,5 @@
 
-import sendgrid from "@sendgrid/mail";
+//import sendgrid from "@sendgrid/mail";
 
 sendgrid.setApiKey(process.env.SG_MTP_KEY);
 
