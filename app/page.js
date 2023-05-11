@@ -70,7 +70,7 @@ export default function Home() {
                                     <div className="input-group">
                                         <span className="input-group-addon"><i className="fa fa-envelope-o"></i></span>
                                         <input id="mail" type="email" className="form-control" name="email" value="" placeholder="Email" />                                    </div>            
-                                    <button type="submit" className="btn btn-default hvr-btn">S'ENREGISTRER</button>
+                                    <button type="submit" className="btn btn-default hvr-btn">S&apos;ENREGISTRER</button>
                                </form>  
                             </div>
                         </div>
@@ -118,7 +118,7 @@ export default function Home() {
             <div className="row">
             	<div className="col-md-6 col-sm-12">
                 	<h2 className="section-heading wow fadeInDown animated">Pour les voyageurs&nbsp;</h2>
-                    <p className="sub-txt wow fadeInUp animated">Louez au meilleur rapport qualité/prix/sécurité tout en bénéficiant d'une grande flexbilité.</p>
+                    <p className="sub-txt wow fadeInUp animated">Louez au meilleur rapport qualité/prix/sécurité tout en bénéficiant d&apos;une grande flexbilité.</p>
                     
                     {/*<!-- Accordian Panel -->*/}
                     <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -132,7 +132,7 @@ export default function Home() {
                     
                             </div>
                             <div id="collapseOne" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                <div className="panel-body"><p>SpaceRent vous redonne du pouvoir d'achat en divisant les frais par 3 comparé à toutes les autres plateformes de location saisonnière comme Airbnb, Booking, Abritel.</p>
+                                <div className="panel-body"><p>SpaceRent vous redonne du pouvoir d&apos;achat en divisant les frais par 3 comparé à toutes les autres plateformes de location saisonnière comme Airbnb, Booking, Abritel.</p>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +196,7 @@ export default function Home() {
                             <div id="collapseFour" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
                                 <div className="panel-body">
                                   <p>En moyenne, chez les concurrents, les frais de service vont de 3% à 18%.&nbsp;</p>
-                                  <p>Avec SpaceRent, c'est 0% de frais de service que vous soyez un hôte particulier ou professionnel.&nbsp;</p>
+                                  <p>Avec SpaceRent, c&apos;est 0% de frais de service que vous soyez un hôte particulier ou professionnel.&nbsp;</p>
                                   <p>Nous vous garantissons ainsi une augmentation de votre taux d'occupation mais surtout, une meilleure rentabilité.&nbsp; &nbsp;</p>
                                 </div>
                             </div>
@@ -210,7 +210,7 @@ export default function Home() {
                     
                             </div>
                             <div id="collapseFive" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                <div className="panel-body"><p>Avec l'émergence de nouveaux voyageurs internationaux de type crypto-touristes, SpaceRent propose une passerelle naturelle vers cette Génération Z.</p></div>
+                                <div className="panel-body"><p>Avec l&apos;émergence de nouveaux voyageurs internationaux de type crypto-touristes, SpaceRent propose une passerelle naturelle vers cette Génération Z.</p></div>
                             </div>
                         </div>
                         <div className="panel panel-default">
