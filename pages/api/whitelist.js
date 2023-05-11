@@ -2,16 +2,23 @@ import { sql } from '@vercel/postgres';
 
 async function insertWhitelist(req, res) {
 
-      try {
+ 
+       try {
 
 
-        await query(sql`
-
-            INSERT INTO whitelist (name, checked) VALUES ('', FALSE)
-
-        `);
-
-
+        var today = new Date(),
+        date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+      
+        const { rows } = await sql`
+          INSERT INTO whitelist ( USERNAME, EMAIL)
+          VALUES (
+            
+             'Adrien',
+              'qsdqqqqqqaaaaaasd@gmail.com'
+              
+            )
+        `;
+        //redirect(`/product/${rows[0].slug}`);
         
       } catch (error) {
         console.log(error);

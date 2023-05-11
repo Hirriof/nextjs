@@ -4,6 +4,7 @@ import React from 'react';
 import Script from 'next/script'
 
 export default function Home() {
+    
    
   async function handleSubmitWhitelist(e) {
     e.preventDefault();
@@ -92,7 +93,7 @@ export default function Home() {
 	 
                                     <div className="input-group">
                                         <span className="input-group-addon"><i className="fa fa-envelope-o"></i></span>
-                                        <input id="mail" type="email" className="form-control" name="email" placeholder="Email"  defaultValue="Email" />                                    </div>            
+                                        <input id="mail" type="email" className="form-control" name="email" placeholder="Email"  defaultValue="aleygues@sdlmfskflmk.com" />                                    </div>            
                                     <button type="submit" className="btn btn-default hvr-btn">S&apos;ENREGISTRER</button>
                                </form>  
                             </div>
@@ -526,7 +527,7 @@ export default function Home() {
         </div>
     </footer>
 
- {/*<!-- jQuery -->*/}
+        {/*<!-- jQuery -->*/}
         <Script strategy="beforeInteractive" src="vendor/jquery/jquery.min.js"></Script>
 
         {/*<!-- Bootstrap Core JavaScript -->*/}
