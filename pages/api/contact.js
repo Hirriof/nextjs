@@ -5,48 +5,31 @@ sendgrid.setApiKey(process.env.SG_MTP_KEY);
 
 async function sendEmail(req, res) {
 
+// voyageurs@spacerent.fr > Mailing 
+
   try {
     await sendgrid.send({
       to: "aleygues@gmail.com", // Your email where you'll receive emails
+      //to: "professionnels@spacerent.fr", // Your email where you'll receive emails
       from: "aleygues@gmail.com", // your website email address here
-      //subject: `[Lead from website] : ${req.body.subject}`,
-      subject: `[Lead from website] : `,
+      subject: `[Lead from website] : ${req.body.subject}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
         <meta charset="utf-8">
-
-        <title>The HTML5 Herald</title>
-        <meta name="description" content="The HTML5 Herald">
-        <meta name="author" content="SitePoint">
-      <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
-
-        <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+        <title>Spacerent: Lead</title>
+        <meta name="description" content="Spacerent: Lead">
+        <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
       </head>
 
       <body>
-        <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">
-              </div>
-              <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>You've got a new mail from  their email is:  </h3>
-              <div style="font-size: 16px;">
-              <p>Message:</p>
-              <p></p>
-              <br>
-              </div>
-              <img src="https://manuarora.in/logo.png" class="logo-image" style="height: 50px;width: 50px;border-radius: 5px;overflow: hidden;">
-              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Regards<br>Manu Arora<br>Software Developer<br>+91 9587738861</p>
-              <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
-                <a href="https://manuarora.in/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Website</a>
-                <a href="https://manuarora.in/blog/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Blog</a>
-                <a href="https://github.com/manuarora700/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">GitHub</a>
-                <a href="https://instagram.com/maninthere/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Instagram</a>
-                <a href="https://linkedin.com/in/manuarora28/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">LinkedIn</a>
-                <a href="https://twitter.com/mannupaaji/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Twitter</a>
-
-              </div>
-              </div>
+        <ul>
+          <li>Firstname: ${req.body.firstname}</li>
+          <li>Lastname: ${req.body.firstname}</li>
+          <li>eMail: ${req.body.email}</li>
+          <li>Phone: ${req.body.phone}</li>
+          <li>Name: ${req.body.message}</li>
+        </ul>
       </body>
       </html>`,
     });
