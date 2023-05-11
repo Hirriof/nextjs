@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-
+import Script from 'next/script'
 
 export default function Home() {
    
@@ -526,7 +526,22 @@ export default function Home() {
         </div>
     </footer>
 
+ {/*<!-- jQuery -->*/}
+        <Script strategy="beforeInteractive" src="vendor/jquery/jquery.min.js"></Script>
 
+        {/*<!-- Bootstrap Core JavaScript -->*/}
+        <Script strategy="beforeInteractive" src="vendor/bootstrap/js/bootstrap.min.js"></Script>
+        <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></Script>
+
+        {/*<!-- Wow Animations -->*/}
+        <Script strategy="beforeInteractive" src="vendor/wow.min.js"></Script>
+
+        {/*<!-- Plugin JavaScript -->*/}
+        <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></Script>
+
+        {/*<!-- Theme JavaScript -->*/}
+        <Script strategy="beforeInteractive" src="js/main.js"></Script>
+        <Script strategy="beforeInteractive" src="js/jquery.isotope.js"></Script>
 
     </div>
 
