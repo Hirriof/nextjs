@@ -540,7 +540,6 @@ export default function Home() {
     <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></Script>
 
     {/*<!-- Theme JavaScript -->*/}*
-
     <Script src="js/main.js"></Script>
     <Script src="js/jquery.isotope.js"></Script>
 
