@@ -11,8 +11,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'SpaceRent : économisez sur vos séjours et revendez-les si vos plans changent !',
-  description: 'SpaceRent : économisez sur vos séjours et revendez-les si vos plans changent !',
+  title: '',
+  description: '',
 }
 
 export default function RootLayout({ children }) {
