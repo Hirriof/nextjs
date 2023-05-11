@@ -253,7 +253,7 @@ export default function Home() {
                                                 <p className="cadd">Paris - France</p>
                                             </div>
                                             <div className="col-md-7 col-sm-6 col-xs-12 col-sm-offset-2 box-test">
-                                                <p><span>"</span> J&apos;alerte sur l&apos;approche du point de rupture, à trop augmenter les prélèvements, Airbnb et consorts (Abritel fait pire), l&apos;écart entre le bénéfice perçu par le propriétaire et le prix payé par le voyageur va devenir trop important… <span>"</span></p>
+                                                <p><span>&#34;</span> J&apos;alerte sur l&apos;approche du point de rupture, à trop augmenter les prélèvements, Airbnb et consorts (Abritel fait pire), l&apos;écart entre le bénéfice perçu par le propriétaire et le prix payé par le voyageur va devenir trop important… <span>&#34;</span></p>
                                                 <hr />
                                                 <h5 className="wow fadeInUp animated">Ghislain165</h5>
                                             </div>
@@ -269,7 +269,7 @@ export default function Home() {
                                                 <p className="cadd">Paris - France</p>
                                             </div>
                                             <div className="col-md-7 col-sm-6 col-xs-12 col-sm-offset-2 box-test">
-                                                <p><span>"</span> J&apos;alerte sur l&apos;approche du point de rupture, à trop augmenter les prélèvements, Airbnb et consorts (Abritel fait pire), l&apos;écart entre le bénéfice perçu par le propriétaire et le prix payé par le voyageur va devenir trop important…  <span>"</span></p>
+                                                <p><span>&#34;</span> J&apos;alerte sur l&apos;approche du point de rupture, à trop augmenter les prélèvements, Airbnb et consorts (Abritel fait pire), l&apos;écart entre le bénéfice perçu par le propriétaire et le prix payé par le voyageur va devenir trop important…  <span>&#34;</span></p>
                                                 <hr />
                                                 <h5 className="wow fadeInUp animated">Ghislain165</h5>
                                             </div>
@@ -289,7 +289,7 @@ export default function Home() {
     </section>
             
 
-            
+
     
     
     
@@ -482,11 +482,13 @@ export default function Home() {
                 </div>              
             </div>
         </div>
+
+
         <div className="fbottom">
         	<div className="container">
             	<div className="row">
                 	<div className="col-xs-12 col-sm-6 col-md-6 wow fadeInUp animated">
-                   	  <h3 style={{color: 'white'}}>La 1ère plateforme de location saisonnière qui utilise la Blockchain pour vous redonner du pouvoir d'achat.</h3>
+                   	  <h3 style={{color: 'white'}}>La 1ère plateforme de location saisonnière qui utilise la Blockchain pour vous redonner du pouvoir d&apos;achat.</h3>
                     	<p>Copyright &copy; 2023 SpaceRent. Tous droits réservés.</p>
                     </div>
                     <div className="col-xs-12 col-sm-6 col-md-6 wow fadeInUp animated">
