@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Script from 'next/script'
 
 export default function Home() {
   async function handleSubmit(e) {
@@ -252,7 +253,7 @@ export default function Home() {
                                                 <p className="cadd">Paris - France</p>
                                             </div>
                                             <div className="col-md-7 col-sm-6 col-xs-12 col-sm-offset-2 box-test">
-                                                <p><span>"</span> J’alerte sur l’approche du point de rupture, à trop augmenter les prélèvements, Airbnb et consorts (Abritel fait pire), l’écart entre le bénéfice perçu par le propriétaire et le prix payé par le voyageur va devenir trop important… <span>"</span></p>
+                                                <p><span>"</span> J&apos;alerte sur l&apos;approche du point de rupture, à trop augmenter les prélèvements, Airbnb et consorts (Abritel fait pire), l&apos;écart entre le bénéfice perçu par le propriétaire et le prix payé par le voyageur va devenir trop important… <span>"</span></p>
                                                 <hr />
                                                 <h5 className="wow fadeInUp animated">Ghislain165</h5>
                                             </div>
@@ -268,7 +269,7 @@ export default function Home() {
                                                 <p className="cadd">Paris - France</p>
                                             </div>
                                             <div className="col-md-7 col-sm-6 col-xs-12 col-sm-offset-2 box-test">
-                                                <p><span>"</span> J’alerte sur l’approche du point de rupture, à trop augmenter les prélèvements, Airbnb et consorts (Abritel fait pire), l’écart entre le bénéfice perçu par le propriétaire et le prix payé par le voyageur va devenir trop important…  <span>"</span></p>
+                                                <p><span>"</span> J&apos;alerte sur l&apos;approche du point de rupture, à trop augmenter les prélèvements, Airbnb et consorts (Abritel fait pire), l&apos;écart entre le bénéfice perçu par le propriétaire et le prix payé par le voyageur va devenir trop important…  <span>"</span></p>
                                                 <hr />
                                                 <h5 className="wow fadeInUp animated">Ghislain165</h5>
                                             </div>
@@ -286,6 +287,8 @@ export default function Home() {
             </div>
         </div>
     </section>
+            
+
             
     
     
@@ -484,7 +487,7 @@ export default function Home() {
             	<div className="row">
                 	<div className="col-xs-12 col-sm-6 col-md-6 wow fadeInUp animated">
                    	  <h3 style={{color: 'white'}}>La 1ère plateforme de location saisonnière qui utilise la Blockchain pour vous redonner du pouvoir d'achat.</h3>
-                    	<p>Copyright © 2023 SpaceRent. Tous droits réservés.</p>
+                    	<p>Copyright &copy; 2023 SpaceRent. Tous droits réservés.</p>
                     </div>
                     <div className="col-xs-12 col-sm-6 col-md-6 wow fadeInUp animated">
                     	<ul className="list-inline">
@@ -500,25 +503,23 @@ export default function Home() {
     </footer>
 
     {/*<!-- jQuery -->*/}
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <Script src="vendor/jquery/jquery.min.js"></Script>
 
     {/*<!-- Bootstrap Core JavaScript -->*/}
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+    <Script src="vendor/bootstrap/js/bootstrap.min.js"></Script>
+	  <Script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></Script>
     
-  {/*<!-- Wow Animations -->*/}
-    <script src="js/wow.min.js"></script>
+    {/*<!-- Wow Animations -->*/}
+    <Script src="js/wow.min.js"></Script>
 
     {/*<!-- Plugin JavaScript -->*/}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></Script>
 
     {/*<!-- Theme JavaScript -->*/}
-    <script src="js/main.js"></script>
-    <script src="js/jquery.isotope.js"></script>
+    <Script src="js/main.js"></Script>
+    <Script src="js/jquery.isotope.js"></Script>
 
     </div>
-
-
 
   );
 }
