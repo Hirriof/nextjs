@@ -45,7 +45,8 @@ export default function Home() {
 
 
   return (
-
+    <div>
+        
 
     {/*<!-- jQuery -->*/}
     <Script src="vendor/jquery/jquery.min.js"></Script>

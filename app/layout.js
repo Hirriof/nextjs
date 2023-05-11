@@ -26,15 +26,7 @@ export default function RootLayout({ children }) {
         <meta name='author' content='SpaceRent' />
       </head>
 
-      <body id="page-top">{children}
-      
-      
-      
-      
-      
-      
-      
-      </body>
+      <body id="page-top">{children}</body>
 
 
     </html>
