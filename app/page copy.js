@@ -616,8 +616,8 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                         			<button type="submit" class="btn btn-default hvr-btn wow fadeInUp animated">Envoyer</button>
-                                 </div>
+                         			    <button type="submit" class="btn btn-default hvr-btn wow fadeInUp animated">Envoyer</button>
+                                </div>
                              </div>                          
                         </form>
                     </div> 

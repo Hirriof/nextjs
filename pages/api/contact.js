@@ -10,9 +10,9 @@ async function sendEmail(req, res) {
   try {
     await sendgrid.send({
       to: "aleygues@gmail.com", // Your email where you'll receive emails
-      //to: "professionnels@spacerent.fr", // Your email where you'll receive emails
       from: "aleygues@gmail.com", // your website email address here
-      subject: `[Lead from website] : ${req.body.subject}`,
+      //subject: `[Lead from website] : ${req.body.subject}`,
+      subject: `Spacerent: Contact form`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
@@ -24,11 +24,11 @@ async function sendEmail(req, res) {
 
       <body>
         <ul>
-          <li>Firstname: ${req.body.firstname}</li>
-          <li>Lastname: ${req.body.firstname}</li>
+          <li>Firstname: ${req.body.fName}</li>
+          <li>Lastname: ${req.body.lName}</li>
           <li>eMail: ${req.body.email}</li>
           <li>Phone: ${req.body.phone}</li>
-          <li>Name: ${req.body.message}</li>
+          <li>Message: ${req.body.Message}</li>
         </ul>
       </body>
       </html>`,
