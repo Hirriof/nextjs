@@ -1,18 +1,13 @@
 import { sql } from '@vercel/postgres';
 
 async function insertWhitelist(req, res) {
-    console.log(req);
+
       try {
 
         console.log(req);
   //      console.log(res);
 //
-        await query(sql`
-
-            INSERT INTO whitelist (name, checked) VALUES ('', FALSE)
-
-        `);
-
+     
 
         
       } catch (error) {
