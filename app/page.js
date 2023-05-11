@@ -505,21 +505,21 @@ export default function Home() {
     </footer>
 
     {/*<!-- jQuery -->*/}
-    <Script src="vendor/jquery/jquery.min.js"></Script>
+    <Script src="../public/vendor/jquery/jquery.min.js"></Script>
 
     {/*<!-- Bootstrap Core JavaScript -->*/}
-    <Script src="vendor/bootstrap/js/bootstrap.min.js"></Script>
+    <Script src="../public/vendor/bootstrap/js/bootstrap.min.js"></Script>
 	  <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></Script>
     
     {/*<!-- Wow Animations -->*/}
-    <Script src="js/wow.min.js"></Script>
+    <Script src="../public/js/wow.min.js"></Script>
 
     {/*<!-- Plugin JavaScript -->*/}
     <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></Script>
 
     {/*<!-- Theme JavaScript -->*/}
-    <Script src="js/main.js"></Script>
-    <Script src="js/jquery.isotope.js"></Script>
+    <Script src="../public/js/main.js"></Script>
+    <Script src="../public/js/jquery.isotope.js"></Script>
 
     </div>
 
