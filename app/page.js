@@ -4,11 +4,12 @@ import React from 'react';
 import Script from 'next/script'
 
 export default function Home() {
-  async function handleSubmit(e) {
+   
+  async function handleSubmitWhitelist(e) {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('/api/whitelist', {
         method: 'post',
         body: new URLSearchParams(data),
       });
@@ -20,7 +21,28 @@ export default function Home() {
       console.error(err);
       alert("We can't submit the form, try again later?");
     }
-  }
+}
+  
+    async function handleSubmitPro(e) {
+        e.preventDefault();
+        const data = new FormData(e.currentTarget);
+        try {
+          const response = await fetch('/api/contact', {
+            method: 'post',
+            body: new URLSearchParams(data),
+          });
+          if (!response.ok) {
+            throw new Error(`Invalid response: ${response.status}`);
+          }
+          alert('Thanks for contacting us, we will get back to you soon!');
+        } catch (err) {
+          console.error(err);
+          alert("We can't submit the form, try again later?");
+        }
+    
+
+    }
+
 
   return (
     <div>
@@ -40,8 +62,8 @@ export default function Home() {
                    <li><a href="#page-top" className="page-scroll hvr-btn">Accueil</a></li>
                     <li><a href="#services" className="page-scroll hvr-btn">Voyageurs</a></li>
                     <li><a href="#works" className="page-scroll hvr-btn">Professionnels</a></li>
-					          <li><a href="#testimonials" className="page-scroll hvr-btn">Témoignages</a></li>
-					          <li><a href="#blog" className="page-scroll hvr-btn">Équipe</a></li>
+					<li><a href="#testimonials" className="page-scroll hvr-btn">Témoignages</a></li>
+					<li><a href="#blog" className="page-scroll hvr-btn">Équipe</a></li>
                     <li><a href="#clients" className="page-scroll hvr-btn">Advisors</a></li>
                     <li><a href="#contact" className="page-scroll hvr-btn">Contact</a></li>
                 </ul>
@@ -60,17 +82,17 @@ export default function Home() {
                         	<img src="img/Logo-Spacerent-Big.png" alt="Spacerent" style={{alignContent: 'center'}} />
                             <h1 className="wow fadeInUp animated" style={{fontSizeAdjust: 'auto'}} >Économisez sur vos séjours et revendez-les si vous CHANGEZ VOS plans</h1>
                             <h3 className="wow fadeInUp animated">Whitelist</h3>
-				              			<p className="wow fadeInUp animated" style={{fontSize: '30px'}}>Inscrivez-vous dès maintenant. <br />Gagnez des avantages exclusifs pour vos prochains voyages</p>
+				    		<p className="wow fadeInUp animated" style={{fontSize: '30px'}}>Inscrivez-vous dès maintenant. <br />Gagnez des avantages exclusifs pour vos prochains voyages</p>
                             <div className="btn-sec">
-                             	<form id="signin" className="navbar-form" onSubmit={handleSubmit}>   
+                             	<form id="signin" className="navbar-form" onSubmit={handleSubmitWhitelist}>   
                                     <div className="input-group">
                                         <span className="input-group-addon"><i className="fa fa-user"></i></span>
-                                        <input id="fname" type="text" className="form-control" name="name" value="" placeholder="Nom" />
+                                        <input id="fname" type="text" className="form-control" name="name" value="" placeholder="Nom"  defaultValue="Nom" />
                                     </div>
 	 
                                     <div className="input-group">
                                         <span className="input-group-addon"><i className="fa fa-envelope-o"></i></span>
-                                        <input id="mail" type="email" className="form-control" name="email" value="" placeholder="Email" />                                    </div>            
+                                        <input id="mail" type="email" className="form-control" name="email" value="" placeholder="Email"  defaultValue="Email" />                                    </div>            
                                     <button type="submit" className="btn btn-default hvr-btn">S&apos;ENREGISTRER</button>
                                </form>  
                             </div>
@@ -406,7 +428,7 @@ export default function Home() {
             <div className="row mtop">
             	<div className="col-sm-8 col-sm-offset-2" >
                 	<div className="form">
-                        <form id="contact-form" name="contactFrm" onSubmit={handleSubmit}>
+                        <form id="contact-form" name="contactFrm" onSubmit={handleSubmitPro}>
                         	<div className="row">
                                 <div className="col-md-6">
                                     <div className="form-group">
