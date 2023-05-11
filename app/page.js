@@ -197,7 +197,7 @@ export default function Home() {
                                 <div className="panel-body">
                                   <p>En moyenne, chez les concurrents, les frais de service vont de 3% à 18%.&nbsp;</p>
                                   <p>Avec SpaceRent, c&apos;est 0% de frais de service que vous soyez un hôte particulier ou professionnel.&nbsp;</p>
-                                  <p>Nous vous garantissons ainsi une augmentation de votre taux d'occupation mais surtout, une meilleure rentabilité.&nbsp; &nbsp;</p>
+                                  <p>Nous vous garantissons ainsi une augmentation de votre taux d&apos;occupation mais surtout, une meilleure rentabilité.&nbsp; &nbsp;</p>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +222,7 @@ export default function Home() {
                     
                             </div>
                             <div id="collapseSix" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                                <div className="panel-body"><p>Connectez votre site à SpaceRent pour améliorer votre compétitivité sur les moteurs de recherche. <br /><br /> Bénéficiez d'un ciblage amélioré pour atteindre des clients plus pertinents et intéressés par votre offre.</p></div>
+                                <div className="panel-body"><p>Connectez votre site à SpaceRent pour améliorer votre compétitivité sur les moteurs de recherche. <br /><br /> Bénéficiez d&apos;un ciblage amélioré pour atteindre des clients plus pertinents et intéressés par votre offre.</p></div>
                             </div>
                         </div>
                     </div>
@@ -231,175 +231,6 @@ export default function Home() {
         </div>
     </section>
         
-    {/*<!-- Counter Section -->*/}
-    <section style={{display: 'none'}}>
-        <div className="container">
-            <div className="row">
-                <div className="col-md-3 col-sm-6 col-xs-6">
-                    <div className="counter-box">
-                        <img src="img/clients.png" alt="counter-icon" />
-                        <div className="count">2500</div>
-                        <h5>clients</h5>
-                    </div>
-                </div>
-                <div className="col-md-3 col-sm-6 col-xs-6">
-                    <div className="counter-box">
-                        <img src="img/projects.png" alt="counter-icon" />
-                        <div className="count">2250</div>
-                        <h5>projects</h5>
-                    </div>
-                </div>
-                <div className="col-md-3 col-sm-6 col-xs-6">
-                    <div className="counter-box">
-                        <img src="img/employees.png" alt="counter-icon" />
-                        <div className="count">4800</div>
-                        <h5>Employees</h5>
-                    </div>
-                </div>
-                <div className="col-md-3 col-sm-6 col-xs-6">
-                    <div className="counter-box">
-                        <img src="img/coffee.png" alt="counter-icon" />
-                        <div className="count">5700</div>
-                        <h5>Daily Coffee</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-	{/*<!-- Section-3 -->*/}
-    <section className="works" style={{display: 'none'}}>
-        <div className="container">
-        	<div className="row">
-            	<div className="col-md-6 col-sm-12">
-                </div>
-            	<div className="col-md-6 col-sm-12">
-        			<h2 className="section-heading wow fadeInUp animated">WORK FLOW</h2>
-                </div>
-            </div>
-            <div className="row">
-            	<div className="col-sm-6">
-                	<div id="video">
-                    	<img src="img/play-icon.png" alt="play-icon" />
-                    </div>                	
-                </div>
-                <div className="col-sm-6">
-                    <p className="vline sub-txt wow fadeInUp animated">Here in this video we are showing our <span>Company Work flow</span> how we manage work and the project delivery output. We handle all kind of technology projects in our company.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
-                </div>
-            </div>
-            <div className="row mtop">
-            	<div className="col-md-3 col-sm-6">
-                	<div className="flow">
-                    	<div className="row">
-            				<div className="col-sm-4 col-xs-5"><h2>1</h2></div>
-                            <div className="col-sm-8 col-xs-7"><h4 className="wow fadeInUp animated">Plan</h4><h5>Research & Inspiration</h5><hr /></div>
-                         </div>
-                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-                      
-                         <button type="button" className="btn btn-flow hvr-btn wow fadeInUp animated">Know more</button>
-                    </div>                
-                </div>
-                <div className="col-md-3 col-sm-6">
-                	<div className="flow">
-                    	<div className="row">
-            				<div className="col-sm-4 col-xs-5"><h2>2</h2></div>
-                            <div className="col-sm-8 col-xs-7"><h4 className="wow fadeInUp animated">DESIGN</h4><h5>Wireframe & Template</h5><hr /></div>
-                         </div>
-                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-                         <button type="button" className="btn btn-flow hvr-btn wow fadeInUp animated">Know more</button>
-                    </div>                
-                </div>
-                <div className="col-md-3 col-sm-6">
-                	<div className="flow">
-                    	<div className="row">
-            				<div className="col-sm-4 col-xs-5"><h2>3</h2></div>
-                            <div className="col-sm-8 col-xs-7"><h4 className="wow fadeInUp animated">DEVELOP</h4><h5>Code & Functionality</h5><hr /></div>
-                         </div>
-                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-                         <button type="button" className="btn btn-flow hvr-btn wow fadeInUp animated">Know more</button>
-                    </div>                
-                </div>
-                <div className="col-md-3 col-sm-6">
-                	<div className="flow">
-                    	<div className="row">
-            				<div className="col-sm-4 col-xs-5"><h2>4</h2></div>
-                            <div className="col-sm-8 col-xs-7"><h4 className="wow fadeInUp animated">LAUNCH</h4><h5>Testing & Upload</h5><h /></div>
-                         </div>
-                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-                         <button type="button" className="btn btn-flow hvr-btn wow fadeInUp animated">Know more</button>
-                    </div>                
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    {/*<!-- Latest Works Section -->*/}
-	<section id="works" className="portfolio" style={{display: 'none'}}>
-    	<div className="container">
-        	<h2 className="section-heading wow fadeInUp animated">LATEST WORKS</h2>
-        	<div className="toolbar mb2 mt2">
-              <button className="btn fil-cat" data-rel="all">All</button>
-              <button className="btn fil-cat" data-rel="web">Web Designs</button>
-              <button className="btn fil-cat" data-rel="graphic">Graphic Designs</button>
-              <button className="btn fil-cat" data-rel="illustrations">Illustrations</button>
-            </div> 
-             
-            <div  style={{clear:'both'}}></div>   
-            <div id="portfolio">
-              <div className="tile scale-anm web all">
-             	 <figure className="thumbnail image">
-                    <a title="Image 1" href="#works"><img className="mdl img-responsive" src="img/work-1.jpg" alt="work1" /></a>
-                 </figure>
-              </div>
-              <div className="tile scale-anm graphic bcards all">
-             	 <figure className="thumbnail image">
-                	<a title="Image 1" href="#works"><img className="mdl img-responsive" src="img/work-2.jpg" alt="work2" /></a>
-                 </figure>
-              </div>
-              <div className="tile scale-anm web all">
-             	 <figure className="thumbnail  image">              	
-                	<a title="Image 1" href="#works"><img className="mdl img-responsive" src="img/work-3.jpg" alt="work3" /></a>
-                 </figure>
-              </div>
-              <div className="tile scale-anm graphic illustrations all">
-             	 <figure className="thumbnail image">
-                 	<a title="Image 1" href="#works"><img className="mdl img-responsive" src="img/work-4.jpg" alt="work4" /></a>
-                 </figure>
-              </div>
-              <div className="tile scale-anm web illustrations all">
-             	 <figure className="thumbnail image">
-                 	<a title="Image 1" href="#works"><img className="mdl img-responsive" src="img/work-5.jpg" alt="work5" /></a>
-                 </figure>
-              </div>
-              <div className="tile scale-anm graphic all">
-             	 <figure className="thumbnail image">
-                 	<a title="Image 1" href="#works"><img className="mdl img-responsive" src="img/work-6.jpg" alt="work6" /></a>
-                 </figure>
-              </div>
-            </div>
-            
-            <div  style={{clear:'both'}}></div>
-            <div tabIndex="-1" className="modal fade" id="myModal" role="dialog">
-              <div className="modal-dialog">
-                  <div className="modal-content">
-                    <div className="modal-header">
-                        <button className="close" type="button" data-dismiss="modal">×</button>
-                        <h3 className="modal-title">Heading</h3>
-                    </div>
-                    <div className="modal-body">
-                        
-                    </div>
-                 </div>
-              </div>
-            </div>            
-        </div>          
-    </section>   
-    
-    
-    
     {/*<!-- Section-4 -->*/}
     <section id="#testimonials" className="testimonials" style={{display: 'true'}}>
         <div className="container">
@@ -537,20 +368,6 @@ export default function Home() {
 					- <span>Gallic Guyot</span>, Advisor Tourisme.<br /></p>      	
                 </div>
             </div>
-            <div className="row" style={{display: 'none'}}>
-                <div className="col-md-3 col-sm-6 col-xs-12 center-block wow fadeIn animated">
-                	<img src="img/client-1.png" alt="client-1" />
-                </div>
-                <div className="col-md-3 col-sm-6 col-xs-12 center-block wow fadeIn animated">
-                	<img src="img/client-2.png" alt="client-2" />
-                </div>
-                <div className="col-md-3 col-sm-6 col-xs-12 center-block wow fadeIn animated">
-                	<img src="img/client-3.png" alt="client-3" />
-                </div>
-                <div className="col-md-3 col-sm-6 col-xs-12 center-block wow fadeIn animated">
-                	<img src="img/client-4.png" alt="client-4" />
-                </div>
-            </div>
         </div>
     </section>
     
@@ -624,18 +441,7 @@ export default function Home() {
         </div>
     </section>
     
-    <section className="btm-sec" style={{display: 'none'}}>
-    	<div className="container">
-        	<div className="row">
-            	<div className="col-sm-9 col-xs-12">
-                	<h3 className="wow fadeInUp animated">If you have any queries for business related... We are Available</h3>
-                </div>
-                <div className="col-sm-3 col-xs-12 center-block"><button type="button" className="btn btn-default hvr-btn wow fadeInUp animated">Contact Now</button></div>
-            </div>
-        </div>    	
-    </section>
-
-    
+   
     <footer>
     	<div className="footer-top" style={{display: 'none'}}>
             <div className="container">
