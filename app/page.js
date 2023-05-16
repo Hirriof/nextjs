@@ -74,7 +74,7 @@ export default function Home() {
                 <div className="col-sm-12">
                     <div className="header-content">
                         <div className="header-content-inner">
-                        	<img src="img/Logo-Spacerent-Big.png" alt="Spacerent" style={{alignContent: 'center'}} />
+                        	<img src="img/Logo-Spacerent-Big.png" alt="Spacerent" style={{alignContent: 'center'}} className='img-responsive'/>
                             <h1 className="wow fadeInUp animated" style={{fontSizeAdjust: 'auto'}} >Économisez sur vos séjours et revendez-les si vous CHANGEZ VOS plans</h1>
                             <h3 className="wow fadeInUp animated">Whitelist</h3>
 				    		<p className="wow fadeInUp animated" style={{fontSize: '30px'}}>Inscrivez-vous dès maintenant. <br />Gagnez des avantages exclusifs pour vos prochains voyages</p>
