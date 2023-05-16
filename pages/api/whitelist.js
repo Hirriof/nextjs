@@ -5,7 +5,8 @@ sendgrid.setApiKey(process.env.SG_MTP_KEY);
 async function insertWhitelist(req, res) {
 
         try {
-          var today = new Date()
+          var today = new Date();
+          // var today = new Date(props.date).toString();
           
           const { rows } = await sql`
             INSERT INTO whitelist ( USERNAME, EMAIL, CREATED_ON)
