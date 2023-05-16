@@ -4399,8 +4399,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     width: auto;
   }
   .navbar-form .input-group > .form-control {
-    width: 100%;
+    width: 150% !important;
+    background-color: black;
   }
+
+  .navbar-form .input-group > .form-control #fname {
+    background-color: black;
+
+  }
+
   .navbar-form .control-label {
     margin-bottom: 0;
     vertical-align: middle;

@@ -5,8 +5,6 @@ sendgrid.setApiKey(process.env.SG_MTP_KEY);
 
 async function sendEmail(req, res) {
 
-// voyageurs@spacerent.fr > Mailing 
-
   try {
     await sendgrid.send({
       to: "aleygues@gmail.com", // Your email where you'll receive emails

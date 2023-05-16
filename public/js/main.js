@@ -15,7 +15,7 @@ new WOW().init();
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
-        offset: 100
+        backgroundColor: 'black'
     });
 
     // Closes the Responsive Menu on Menu Item Click
@@ -33,15 +33,7 @@ new WOW().init();
 })(jQuery); // End of use strict
 
 
-//Video Script
-
-$('#video').on('click', function() {
-    $(this).html('<iframe src="https://www.youtube.com/embed/1iIZeIy7TqM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>').css('background', 'none');
-});
-
-
 //Counter Script
-
 $('.count').each(function () {
     $(this).prop('Counter',0).animate({
         Counter: $(this).text()
@@ -56,7 +48,6 @@ $('.count').each(function () {
 
 
 //Latest Works Script
-
 var selectedClass = "";
 $(".fil-cat").on('click',function(){ 
 	selectedClass = $(this).attr("data-rel"); 
@@ -78,9 +69,8 @@ $('.mdl').on('click',function(){
 
 
 // Contact form Script
-
 $('#contact-form').bootstrapValidator({
-//        live: 'disabled',
+
 	message: 'This value is not valid',
 	fields: {
 		Name: {
