@@ -5,7 +5,6 @@ import Script from 'next/script'
 
 export default function Home() {
     
-   
   async function handleSubmitWhitelist(e) {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
@@ -17,7 +16,9 @@ export default function Home() {
       if (!response.ok) {
         throw new Error(`Invalid response: ${response.status}`);
       }
-      alert('Thanks for contacting us, we will get back to you soon!');
+      document.getElementById("whitelist-confirmation-message").innerText = "Merci pour votre inscription, nous revenons vers vous au plus vite !";
+   
+      
     } catch (err) {
       console.error(err);
       alert("We can't submit the form, try again later?");
@@ -35,44 +36,37 @@ export default function Home() {
           if (!response.ok) {
             throw new Error(`Invalid response: ${response.status}`);
           }
-          alert('Thanks for contacting us, we will get back to you soon!');
+          document.getElementById("pro-confirmation-message").innerText = "Merci pour votre inscription, nous revenons vers vous au plus vite !";
         } catch (err) {
           console.error(err);
           alert("We can't submit the form, try again later?");
         }
-    
-
     }
 
-
-  return (
+    return (
     <div>
         <nav id='mainNav' className="navbar navbar-default navbar-fixed-top">
-        <div className="container">
-        {/* <!-- Brand and toggle get grouped for better mobile display -->*/}
-            <div className="navbar-header">
-                <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span className="sr-only">Toggle navigation</span><i className="fa fa-bars"></i>
-                </button>
-                <a className="navbar-brand page-scroll" href="#page-top"><img src="img/Logo-spacerent.png" alt="logo" /></a>
-            </div>
+            <div className="container">
+                <div className="navbar-header">
+                    <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span className="sr-only">Toggle navigation</span><i className="fa fa-bars"></i>
+                    </button>
+                    <a className="navbar-brand page-scroll" href="#page-top"><img src="img/Logo-spacerent.png" alt="logo" /></a>
+                </div>
 
-            {/*<!-- Collect the nav links, forms, and other content for toggling -->*/}
-            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul className="nav navbar-nav navbar-right">
-                   <li><a href="#page-top" className="page-scroll hvr-btn">Accueil</a></li>
-                    <li><a href="#services" className="page-scroll hvr-btn">Voyageurs</a></li>
-                    <li><a href="#works" className="page-scroll hvr-btn">Professionnels</a></li>
-					<li><a href="#testimonials" className="page-scroll hvr-btn">Témoignages</a></li>
-					<li><a href="#blog" className="page-scroll hvr-btn">Équipe</a></li>
-                    <li><a href="#clients" className="page-scroll hvr-btn">Advisors</a></li>
-                    <li><a href="#contact" className="page-scroll hvr-btn">Contact</a></li>
-                </ul>
+                <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul className="nav navbar-nav navbar-right">
+                        <li><a href="#page-top" className="page-scroll hvr-btn">Accueil</a></li>
+                        <li><a href="#services" className="page-scroll hvr-btn">Voyageurs</a></li>
+                        <li><a href="#works" className="page-scroll hvr-btn">Professionnels</a></li>
+                        <li><a href="#testimonials" className="page-scroll hvr-btn">Témoignages</a></li>
+                        <li><a href="#blog" className="page-scroll hvr-btn">Équipe</a></li>
+                        <li><a href="#clients" className="page-scroll hvr-btn">Advisors</a></li>
+                        <li><a href="#contact" className="page-scroll hvr-btn">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            {/*<!-- /.navbar-collapse -->*/}
-        </div>
-        {/*<!-- /.container-fluid -->*/}
-    </nav>
+        </nav>
 
     <header className="header">
         <div className="container">
@@ -88,13 +82,14 @@ export default function Home() {
                              	<form id="signin" className="navbar-form" onSubmit={handleSubmitWhitelist}>   
                                     <div className="input-group">
                                         <span className="input-group-addon"><i className="fa fa-user"></i></span>
-                                        <input id="fname" type="text" className="form-control" name="name" placeholder="Nom"  defaultValue="Nom" />
+                                        <input id="fname" type="text" className="form-control" name="fname" placeholder="Nom"  defaultValue="Nom" />
                                     </div>
 	 
                                     <div className="input-group">
                                         <span className="input-group-addon"><i className="fa fa-envelope-o"></i></span>
                                         <input id="mail" type="email" className="form-control" name="email" placeholder="Email"  defaultValue="aleygues@sdlmfskflmk.com" />                                    </div>            
                                     <button type="submit" className="btn btn-default hvr-btn">S&apos;ENREGISTRER</button>
+                                    <p id="whitelist-confirmation-message"></p>
                                </form>  
                             </div>
                         </div>
@@ -103,38 +98,6 @@ export default function Home() {
             </div>
         </div>
     </header>
-	
-    {/*<!-- Section-1 -->*/}
-    <section id="about" className="abt" style={{display:'none'}}>
-        <div className="container">
-            <div className="row">
-            	<div className="col-sm-4">
-                	<h2 className="section-heading wow fadeInUp animated">About Us</h2>
-                </div>
-                <div className="col-sm-8">
-                    <p className="vline sub-txt wow fadeInUp animated">We are professionals in <span>Web design & Graphic design</span>. We do quality website templates as per clients requirements, we follow current web trends. our support will be there after completed the projects.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>       	
-                </div>
-            </div>
-            <div className="row mtop">
-            	<div className="col-sm-4">
-                	<img src="img/abt-1.png" alt="abt-icon" />
-                    <h4 className="wow fadeInUp animated">Who we are ?</h4>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto explicabo.</p>
-                </div>
-                <div className="col-sm-4">
-                	<img src="img/abt-2.png" alt="abt-icon" />
-                    <h4 className="wow fadeInUp animated">What we do?</h4>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto explicabo.</p>
-                </div>
-                <div className="col-sm-4">
-                	<img src="img/abt-3.png" alt="abt-icon" />
-                    <h4 className="wow fadeInUp animated">Why we Are ?</h4>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto explicabo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 	
     {/*<!-- Section-2 -->*/}
     <section id="services" className="services">
@@ -256,7 +219,7 @@ export default function Home() {
     </section>
         
     {/*<!-- Section-4 -->*/}
-    <section id="#testimonials" className="testimonials" style={{display: 'true'}}>
+    <section id="#testimonials" className="testimonials">
         <div className="container">
         	<div className="row">
             	<div className="col-sm-12">
@@ -309,12 +272,7 @@ export default function Home() {
                 </div>
             </div>
         </div>
-    </section>
-            
-
-
-    
-    
+    </section>    
     
     {/*<!-- Section-5 -->*/}
     <section id="blog" className="blog">
@@ -376,9 +334,7 @@ export default function Home() {
               </div>
         </div>
     </section>
-    
-    
-    
+        
     {/*<!-- clients section-->*/}
     <section id="clients" className="works">
         <div className="container">
@@ -413,7 +369,7 @@ export default function Home() {
                 <div className="col-sm-4">
                 	<i className="fa fa-phone wow fadeInUp animated"></i>
                 	<p>+33 7 87 47 28 92
-<br /></p>
+                </p>
                 </div>
                 <div className="col-sm-4">
                 	<i className="fa fa-map-marker wow fadeInUp animated"></i>
@@ -456,9 +412,11 @@ export default function Home() {
                                         <textarea className="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
                                     </div>
                                 </div>
+                                <p id="pro-confirmation-message"></p>
                                 <div className="col-md-12">
                          			    <button type="submit" className="btn btn-default hvr-btn wow fadeInUp animated">Envoyer</button>
                                 </div>
+
                              </div>                          
                         </form>
                     </div> 
@@ -466,47 +424,8 @@ export default function Home() {
             </div>
         </div>
     </section>
-    
    
     <footer>
-    	<div className="footer-top" style={{display: 'none'}}>
-            <div className="container">
-                <div className="row">
-                    <div className="col-xs-12 col-sm-6 col-md-4">
-                        <a href="index.html"><img src="img/logo.png" className="img-responsive wow fadeInUp animated" alt="logo-2" /></a>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit be voluptatem accusantium doloremque laudantium, so aperiam, eaque ipsa quae ab illo inventore quasi to architecto beatae vitae dicta sunt explicabo.</p><br/>                        
-                    </div>
-                    <div className="col-xs-12 col-sm-6 col-md-3">
-                        <h3>QUICK LINKS</h3>
-                        <div className="row">
-                            <div className="col-xs-6 col-sm-6 col-md-6">
-                                <ul className="rgt">
-                                    <li><i className="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#page-top" className="page-scrol">Home</a></li>
-                                    <li><i className="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#about" className="page-scrol">About Us</a></li>
-                                    <li><i className="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#services" className="page-scrol">Services</a></li>
-                                    <li><i className="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#clients" className="page-scrol">Our Clients</a></li>
-                                    <li><i className="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#testimonials" className="page-scroll">Testimonial</a></li>
-                                    <li><i className="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#contact" className="page-scroll">Contact</a></li>
-                                </ul>
-                             </div>
-                             <div className="col-xs-6 col-sm-6 col-md-6">
-                                <ul>                        	
-                                    <li><i className="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#works" className="page-scroll">Works</a></li>
-                                    <li><i className="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#blog" className="page-scroll">Our Blog</a></li>
-                                </ul>
-                             </div>
-                          </div>
-                    </div>
-                    <div className="col-xs-12 col-sm-12 col-md-5">
-                        <div className="map-responsive">
-                            {'/* <iframe src="https://maps.google.com/maps?f=q&source=s_q&q=Newyork%20City&aq=0&ie=UTF8&t=m&z=12&iwloc=A&output=embed" width="480" height="240" allowFullScreen></iframe> */'}
-                        </div> 
-                    </div>
-                </div>              
-            </div>
-        </div>
-
-
         <div className="fbottom">
         	<div className="container">
             	<div className="row">
@@ -515,12 +434,12 @@ export default function Home() {
                     	<p>Copyright &copy; 2023 SpaceRent. Tous droits réservés.</p>
                     </div>
                     <div className="col-xs-12 col-sm-6 col-md-6 wow fadeInUp animated">
-                    	<ul className="list-inline">
+                    	{/*<ul className="list-inline">
                             <li><i className="fa  fa-facebook" aria-hidden="true"></i></li>
                             <li><i className="fa fa-twitter" aria-hidden="true"></i></li>
                             <li><i className="fa  fa-google" aria-hidden="true"></i></li>
                             <li><i className="fa fa-linkedin" aria-hidden="true"></i></li>
-                        </ul>
+                        </ul>*/}
                     </div>
                 </div>
             </div>
