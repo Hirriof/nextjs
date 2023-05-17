@@ -8,20 +8,24 @@ export default function Home() {
   async function handleSubmitWhitelist(e) {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
+    
     try {
-      const response = await fetch('/api/whitelist', {
-        method: 'post',
-        body: new URLSearchParams(data),
-      });
+        const response = await fetch('/api/whitelist', {
+            method: 'post',
+            body: new URLSearchParams(data),
+        });
+       
       if (!response.ok) {
-        throw new Error(`Invalid response: ${response.status}`);
-      }
-      document.getElementById("whitelist-confirmation-message").innerText = "Merci pour votre inscription, nous revenons vers vous au plus vite !";
-   
+            throw new Error(`Invalid response: ${response.status}`);
+    }
+ 
+
+       /*  document.getElementById('whitelist-confirmation').display = "block"; */
+        document.getElementById('submitWL').innerText = "OK !";    
+        
       
     } catch (err) {
-      console.error(err);
-      alert("We can't submit the form, try again later?");
+        console.error(err);
     }
 }
   
@@ -36,7 +40,7 @@ export default function Home() {
           if (!response.ok) {
             throw new Error(`Invalid response: ${response.status}`);
           }
-          document.getElementById("pro-confirmation-message").innerText = "Merci pour votre inscription, nous revenons vers vous au plus vite !";
+         /*  document.getElementById("pro-confirmation-message").innerText = "Merci pour votre inscription, nous revenons vers vous au plus vite !";*/
         } catch (err) {
           console.error(err);
           alert("We can't submit the form, try again later?");
@@ -45,7 +49,7 @@ export default function Home() {
 
     return (
     <div>
-        <nav id='mainNav' className="navbar navbar-default navbar-fixed-top">
+        <nav id='mainNav' className="navbar navbar-default navbar-fixed-top affix-top" >
             <div className="container">
                 <div className="navbar-header">
                     <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -54,7 +58,7 @@ export default function Home() {
                     <a className="navbar-brand page-scroll" href="#page-top"><img src="img/Logo-spacerent.png" alt="logo" /></a>
                 </div>
 
-                <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div id="bs-example-navbar-collapse-1" className="collapse navbar-collapse">
                     <ul className="nav navbar-nav navbar-right">
                         <li><a href="#page-top" className="page-scroll hvr-btn">Accueil</a></li>
                         <li><a href="#services" className="page-scroll hvr-btn">Voyageurs</a></li>
@@ -87,9 +91,12 @@ export default function Home() {
 	 
                                     <div className="input-group">
                                         <span className="input-group-addon"><i className="fa fa-envelope-o"></i></span>
-                                        <input id="mail" type="email" className="form-control" name="email" placeholder="Email"  defaultValue="aleygues@sdlmfskflmk.com" />                                    </div>            
-                                    <button type="submit" className="btn btn-default hvr-btn">S&apos;ENREGISTRER</button>
-                                    <p id="whitelist-confirmation-message"></p>
+                                        <input id="mail" type="email" className="form-control" name="email" placeholder="Email"  defaultValue="aleygues@sdlmfskflmk.com" />                                    
+                                    </div>            
+                                    <button id="submitWL" type="submit" className="btn btn-default hvr-btn">S&apos;ENREGISTRER</button>
+                                    
+                                    {/* <p id="whitelist-confirmation">Merci pour votre inscription, nous revenons vers vous au plus vite !</p> */}
+                                    
                                </form>  
                             </div>
                         </div>

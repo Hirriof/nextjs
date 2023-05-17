@@ -232,6 +232,7 @@ p {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+
 }
 .hvr-btn:before {
   content: '';
@@ -302,7 +303,18 @@ header .header-content .header-content-inner p {
    line-height: 35px;
    margin: 0 auto;
    max-width: 716px;
+   
 }
+
+header .header-content .header-content-inner p#whitelist-confirmation-message {
+	display: none;
+	background-color: #62C2D0;
+	border: 2px solid green;
+	padding: 10px;
+	margin-top: 10px;
+	width: 55%;
+}
+
 
 /*  Header - 2 Section  */
 
@@ -328,13 +340,20 @@ header.header-2	.form-control {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;	
 	min-width: 200px;
-    padding: 12px 0;
+    padding: 12px 10px !important;
 }
 header.header-2 .input-group {
 	border: 1px solid #2b8491;
-    margin: 15px;
-	margin-left:0;
+    margin: 15px 0;
+	
 }
+
+div.input-group {
+	margin: 10px;
+}
+
+
+
 header.header-2 .input-group:hover {
     border: 1px solid #62c2d0;
 }
@@ -761,8 +780,10 @@ section.testimonials h2{
 }
 #quote-carousel .carousel-control {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 1px solid #1b3439;
-    color: #1b3439;
+    /* border: 1px solid #1b3439;
+    color: #1b3439; */
+	border: 1px solid #fff;
+    color: #fff;
     font-size: 18px;
     height: 38px;
     margin-left: 30px;
@@ -1039,8 +1060,11 @@ and (max-device-width : 480px) {
 		padding: 15px 0;
 	}
 	header .header-content .header-content-inner p {
-    	display: none;
+    	/* display: none; */
 	}
+
+
+
 	section{
     	padding: 50px 0;
 	}
@@ -1240,6 +1264,7 @@ and (max-device-width : 767px){
 		margin: 5px auto;
 	}
 
+
 }
 
 @media only screen
@@ -1266,6 +1291,7 @@ and (max-device-width : 991px) {
 	.map-responsive {
    		margin-top: 50px;
 	}
+	
 }
 
 @media (min-width: 1200px) {

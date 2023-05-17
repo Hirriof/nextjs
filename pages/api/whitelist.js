@@ -6,7 +6,7 @@ async function insertWhitelist(req, res) {
 
         try {
           var today = new Date();
-            
+          
           const { rows } = await sql`
             INSERT INTO whitelist ( USERNAME, EMAIL, CREATED_ON)
             VALUES (
